@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Partidas Ranqueadas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Partidas Ranqueadas</h1>
+        <form id="ranked-form">
+            <label for="wins">Vitórias:</label>
+            <input type="number" id="wins" placeholder="Vitórias" required>
+            <label for="losses">Derrotas:</label>
+            <input type="number" id="losses" placeholder="Derrotas" required>
+            <button type="button" onclick="calculateRank()">Calcular</button>
+        </form>
+        <div id="result" class="hidden">
+            <p>O Herói tem um saldo de <span id="ranked-balance"></span> e está no nível <span id="ranked-level"></span>.</p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
